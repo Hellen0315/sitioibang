@@ -1,25 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import React,{Component} from 'react'
+import tarjeta from './img/webibang.png'
+import video from './video/ibang.mp4'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+class App extends Component{
+  render () {
+    return (
+    <div className='App'>
+      <video src={video} className='video' controls ></video>
+      <img className="imagen" src={tarjeta} alt="Tarjeta" />
     </div>
-  );
+    )
+  }
 }
+
 
 export default App;
